@@ -4,7 +4,7 @@
     .controller('MainController', mainController);
         function mainController() {
             var vm = this;
-            vm.url = 'http://api.icndb.com/jokes/random/38';
+            vm.url = 'http://api.icndb.com/jokes/random/50';
             vm.els = [];
             vm.setup = {
                 enable: {
@@ -80,7 +80,7 @@
                         by: 'surname'
                     },
                     pagination: {
-                        pageSize: 2,
+                        pageSize: 15,
                         page: 1
                     }
                 },
