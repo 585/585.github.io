@@ -125,6 +125,22 @@
                         </d-list>
                     </div>
                 </div>
+                
+                <div class="row">
+                    <h5 class="hero-heading">Another table, remote data again but with filters</h5>
+                    <div class="row table-container">
+                        <d-filters data-setup="vm.setup" data-fields="vm.elements" data-list-name="NorrisTable"></d-filters>
+                        
+                        <d-list name="NorrisTable" data-elements="vm.els" data-url="vm.url" data-setup="vm.setup2">
+                            <action-box data-label="Select" data-icon="unchecked" data-size="sm">
+                                <action-select-all></action-select-all>
+                                <action-select-none></action-select-none>
+                                <action-select-inverse></action-select-inverse>
+                            </action-box>
+                            <edit-mode-button data-size="sm"></edit-mode-button>
+                        </d-list>
+                    </div>
+                </div>
             </div>
         </div>
 
