@@ -22,7 +22,8 @@
                     },
                     pagination: {
                         pageSize: 2,
-                        page: 1
+                        page: 1,
+                        pageSize: [2, 5]
                     }
                 },
                 i18n: {
@@ -82,6 +83,7 @@
                     pagination: {
                         pageSize: 15,
                         page: 1
+                        pageSize: [5, 10, 15, 20, 50]
                     }
                 },
                 i18n: {
