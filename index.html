@@ -143,7 +143,103 @@
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="twelve columns">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Key</th>
+                                        <th>Subkeys</th>
+                                        <th>Options</th>
+                                        <th>Default</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody><tr>
+                                    <td>enable</td>
+                                    <td>header, footer, sorting, pagination, filters, checkboxes</td>
+                                    <td>true, false</td>
+                                    <td>all keys = <em>true</em></td>
+                                    <td>Enables or disables the visibility of a part of the table. Keys are (hopefully) self explanatory.</td>
+                                </tr>
+                                <tr>
+                                    <td>defaults</td>
+                                    <td>sort</td>
+                                    <td>{order, page}</td>
+                                    <td><em>{order: ‘asc’, by: ‘name’}</em></td>
+                                    <td>Enables/disables a tables header visibility</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>pagination</td>
+                                    <td>{pageSize, page}</td>
+                                    <td><em>{pageSize: 10, page: 1}</em></td>
+                                    <td>Enables/disables a tables header visibility</td>
+                                </tr>
+                                <tr>
+                                    <td>i18n</td>
+                                    <td>pagination</td>
+                                    <td>{next, prev, start, end}</td>
+                                    <td><em>{next: ‘Next’, prev: ‘Previous’, start: ‘Start’, end: ‘End’}</em></td>
+                                    <td>Enables/disables a tables header visibility</td>
+                                </tr>
+                                <tr>
+                                    <td>templates</td>
+                                    <td><em>jsonKey</em></td>
+                                    <td>all keys from json object populating row. For example: {name: ‘My name is’ + $item.value}</td>
+                                    <td>undefined</td>
+                                    <td>Enables/disables a tables header visibility</td>
+                                </tr>
+                                <tr>
+                                    <td>edit</td>
+                                    <td><em>jsonKey</em></td>
+                                    <td>all keys from json object populating row. For example: {name: ‘My name is’ + $item.value}</td>
+                                    <td>undefined</td>
+                                    <td>Enables/disables a tables header visibility</td>
+                                </tr>
+                                <tr>
+                                    <td>columns</td>
+                                    <td>include</td>
+                                    <td>all keys from json object populating row. For example: {name: ‘My name is’ + $item.value}</td>
+                                    <td>undefined</td>
+                                    <td>Enables/disables a tables header visibility</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>exclude</td>
+                                    <td>all keys from json object populating row. For example: {name: ‘My name is’ + $item.value}</td>
+                                    <td>undefined</td>
+                                    <td>Enables/disables a tables header visibility</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>order</td>
+                                    <td>all keys from json object populating row. For example: {name: ‘My name is’ + $item.value}</td>
+                                    <td>undefined</td>
+                                    <td>Enables/disables a tables header visibility</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>sortables</td>
+                                    <td>all keys from json object populating row. For example: {name: ‘My name is’ + $item.value}</td>
+                                    <td>undefined</td>
+                                    <td>Enables/disables a tables header visibility</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>labels</td>
+                                    <td>all keys from json object populating row. For example: {name: ‘My name is’ + $item.value}</td>
+                                    <td>undefined</td>
+                                    <td>Enables/disables a tables header visibility</td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
     <script src="js/d-list.min.js"></script>
     <script src="js/app.js"></script>
