@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
     <head>
         <meta charset="utf-8">
         <title>DList & DFilters</title>
@@ -18,7 +18,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-sanitize.min.js"></script>
     </head>
 
-    <body class="has-docked-nav" ng-app="app">
+    <body class="has-docked-nav">
 
         <nav class="navbar">
               <div class="container">
@@ -103,10 +103,10 @@
                                 <action-select-none></action-select-none>
                                 <action-select-inverse></action-select-inverse>
                             </action-box>
-                            <action-box data-label="Actions" data-icon="cog" data-size="sm">
+                            <!-- <action-box data-label="Actions" data-icon="cog" data-size="sm">
                                 <action-delete></action-delete>
                                 <action-add-item></action-add-item>
-                            </action-box>
+                            </action-box> -->
                             <edit-mode-button data-size="sm"></edit-mode-button>
                         </d-list>
                     </div>
@@ -164,21 +164,21 @@
                                     <td>sort</td>
                                     <td>{order, page}</td>
                                     <td><em>{order: ‘asc’, by: ‘name’}</em></td>
-                                    <td>Enables/disables a tables header visibility</td>
+                                    <td>Sets sorting defaults</td>
                                 </tr>
                                 <tr>
                                     <td></td>
                                     <td>pagination</td>
-                                    <td>{pageSize, page}</td>
-                                    <td><em>{pageSize: 10, page: 1}</em></td>
-                                    <td>Enables/disables a tables header visibility</td>
+                                    <td>{page, pageSize, pageSizeOptions}</td>
+                                    <td><em>{page: 1, pageSize: 10, pageSizeOptions: [10, 15, 20, 50]}</em></td>
+                                    <td>Sets pagination related options defaults</td>
                                 </tr>
                                 <tr>
                                     <td>i18n</td>
                                     <td>pagination</td>
                                     <td>{next, prev, start, end}</td>
                                     <td><em>{next: ‘Next’, prev: ‘Previous’, start: ‘Start’, end: ‘End’}</em></td>
-                                    <td>Enables/disables a tables header visibility</td>
+                                    <td>Allows for own internationalization of strings</td>
                                 </tr>
                                 <tr>
                                     <td>templates</td>
