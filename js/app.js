@@ -58,9 +58,9 @@
                 columns: {
                     include: ['name', 'surname', 'age'],
                     order: [],
-                    sortables: ['surname'],
+                    //sortables: ['surname'],
                     labels: {
-                        name: 'Name own label'
+                        name: 'My own custom name label'
                     }
                 }
             };
@@ -68,9 +68,9 @@
             vm.setup2 = {
                 enable: {
                     header: true,
-                    footer: false,
+                    footer: true,
                     sorting: true,
-                    pagination: false,
+                    pagination: true,
                     filters: true,
                     checkboxes: true
                 },
@@ -139,7 +139,8 @@
             }, {
                 id: 4,
                 name: 'Alex',
-                surname: 'Night'
+                surname: 'Night',
+                age: 13
             }, {
                 id: 5,
                 name: 'Martin',
@@ -150,8 +151,16 @@
             vm.fields = [{
                 type: 'text',
                 label: 'Name',
-                ngModel: 'name'
-            }, {
+                ngModel: 'name',
+                size: [4,4,4,4]
+            },
+            {
+                type: 'text',
+                label: 'Surname',
+                ngModel: 'surname',
+                size: [4,4,4,4]
+            },
+            {
                 type: 'select',
                 label: 'Sex',
                 ngModel: 'sex',
@@ -161,11 +170,8 @@
                 }, {
                     key: 'female',
                     value: 'Female'
-                }]
-            }, {
-                type: 'checkbox',
-                label: 'Single?',
-                ngModel: 'single'
+                }],
+                size: [4,4,4,4]
             }];
         }
 })();
